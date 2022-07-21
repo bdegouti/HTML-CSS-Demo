@@ -1,0 +1,100 @@
+
+body {
+	background-color: #bec3cc;
+	font-family: Arial;
+	margin: 0;
+}
+
+header {
+	background-color: #3d4552;
+	overflow: hidden;
+	padding: 20px 20px;
+}
+
+header h1 {
+	float: left;
+	color: white;
+	text-align: center;
+	font-size: 22px;
+	font: sans-serif;
+}
+
+header .menu-icon {
+	float: right;
+	position: relative;
+	top: 14px;
+}
+
+.orange {
+	color: #ff8533;
+}
+
+main.textbook-inventory {
+	margin: 1.5vw;
+}
+
+main.textbook-inventory img {
+	max-height: 100%;
+	max-width: 100%;
+}
+
+main.textbook-inventory a:link {
+  text-decoration: none;
+}
+
+main.textbook-inventory a:visited {
+  text-decoration: none;
+}
+
+main.textbook-inventory figure {
+	width: 22.5vw;
+	height: 36vw;
+	float: left;
+	font-size: 18px;
+	margin: 0.5vw;
+	background-color: white;
+	position: relative;
+}
+
+main.textbook-inventory figure:hover {
+	transition: 0.5s;
+	box-shadow: 4px 4px 8px grey;
+}
+
+main.textbook-inventory figure:hover .See_More{
+	transition: 0.7s;
+	opacity: 1;
+}
+
+main.textbook-inventory figure p {
+	position: relative;
+	left: 15px;
+	top: -10px;
+	font: sans-serif;
+}
+
+main.textbook-inventory .See_More {
+	opacity: 0;
+	transition: 0.5s;
+	background-color: #ff8533;
+	color: white;
+	border-radius: 3px;
+	position: absolute;
+	left: 15px;
+	top: 90%;
+	padding: 3px;
+}
+
+@media only screen and (max-width: 770px) {
+	main.textbook-inventory figure {
+		width: 45vw;
+		height: 72vw;
+	}
+}
+
+@media only screen and (max-width: 480px) {
+	main.textbook-inventory figure {
+		width: 90vw;
+		height: 144vw;
+	}
+}
